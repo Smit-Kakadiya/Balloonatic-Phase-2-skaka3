@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Balloonatic Asylum General Error</title>
+        <link rel="stylesheet" href="public/css/style.css">
+    </head>
+        <div id="content">
+            <table>
+                <tr>
+                    <td>
+                        <a href="/"><img src="public/images/logo.jpg" class="logo2"/></a>
+                    </td>
+                    <td>
+                        <h1><center><blink>The<br>Balloonatic<br>Asylum</blink></center>
+                        </h1>
+                    </td>
+                    <td>
+                        <% if(authorized){ %>
+                            <a href="logout" class="logoutbutton">Logout</a>
+                        <% }else{ %>
+                            <a href="login" class="lbutton">Login</a>
+                            <a href="register" class="rbutton">Register</a>
+                        <% } %>
+                    </td>
+                    <td>
+                        <div class="navbar">
+                            <h1>
+                                <a href="/balloon-category?category=birthday_bouquets">Products</a>
+                                <a href="about">About</a>
+                                <a href="contact">Contact Us</a>
+                            </h1>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div class="navtwo">                            
+                            <div class="grid-item"><a href="/balloon-category?category=birthday_bouquets">Birthday Bouquets</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=ballony_occasions">Balloony Occasions</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=build_a_ballon_bouquet">Build a Balloon Bouquet</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=decorating_with_ballons">Decorating with Balloons</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=ballon_in_bulk">Balloons in Bulk</a></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>    
+            <h1 style="color: darkblue;"><center><u>General Error: Page Not Found</u></center></h1>
+            <br><br><br><br><br>
+            <h3 style="text-align: center;">
+                This web page for Balloonatic Assylum is not found. 
+                There is an issue in URL to findout this webpage. You can redirect to home page by clicking below button.
+            </h3>    
+            <h2 style="text-align: center;"><a href="/">Home Page</a></h2>      
+        </div>
+        <br><br><br>
+        <div class="footer">
+            <p>Copyright 1999-2021 by Smit Kakadiya. All Rights Reserved.</p>
+        </div>
+        <script src="public/js/main.js"></script>
+    </body>
+</html>

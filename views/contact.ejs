@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            Contact US
+        </title>
+        <link rel="stylesheet" href="public/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body onload='document.form1.email.focus()'>
+        <div id="content">
+            <table>
+                <tr>
+                    <td>
+                        <a href="/"><img src="public/images/logo.jpg" class="logo1"/></a>
+                    </td>
+                    <td>
+                        <h1><center><blink>The<br>Balloonatic<br>Asylum</blink></center>
+                        </h1>
+                    </td>
+                    <td>
+                        <% if(authorized){ %>
+                            <a href="logout" class="logoutbutton">Logout</a>
+                        <% }else{ %>
+                            <a href="login" class="lbutton">Login</a>
+                            <a href="register" class="rbutton">Register</a>
+                        <% } %>
+                    </td>
+                    <td>
+                        <div class="navbar">
+                            <h1>
+                                <a href="/balloon-category?category=birthday_bouquets">Products</a>
+                                <a href="about">About</a>
+                                <a href="contact">Contact Us</a>
+                            </h1>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div class="navtwo">                            
+                            <div class="grid-item"><a href="/balloon-category?category=birthday_bouquets">Birthday Bouquets</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=ballony_occasions">Balloony Occasions</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=build_a_ballon_bouquet">Build a Balloon Bouquet</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=decorating_with_ballons">Decorating with Balloons</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=ballon_in_bulk">Balloons in Bulk</a></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <img src="public/images/contact.png" alt="Krista" class="contact">
+            <br>
+            <p class="intro">
+                Please contact us anytime if you guys got any question, concern and feedback. Please do not hesitate to contact us via our mobile number or email. Our firm's home address is located at 149 Elm St, New Haven, CT 06511 and the phone number is +1-203-432-2300. General e-mail inquiries can be made via e-mail to customer-support@tba.com.
+            </p>
+            <br><br>
+            <h1 style="color: darkmagenta"><left style="margin: 0px 0px 0px 100px;"><u>Subscribe to our NewsLetter:</u></left></h1>  
+            <form name="form1" method="POST" action="/homee">  
+                <p class="intro">
+                Email:                
+                <input type="email" name="email" required>
+                <input type="submit" class="form-submit-button" name="submit" value="Submit" onclick="emailValidation(document.form1.email)"/></input>
+                </p>
+            </form>
+            <br><br><br><br>
+        </div>
+        
+        <div class="footer">
+            <p>Copyright 1999-2021 by Smit Kakadiya. All Rights Reserved.</p>
+        </div>
+        <script src="public/js/main.js"></script>
+    </body>
+</html>

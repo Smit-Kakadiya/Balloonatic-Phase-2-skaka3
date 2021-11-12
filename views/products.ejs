@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>
+            Products
+        </title>
+        <link rel="stylesheet" href="public/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            <table>
+                <tr>
+                    <td>
+                        <a href="/"><img src="public/images/logo.jpg" class="logo1"/></a>
+                    </td>
+                    <td>
+                        <h1><center><blink>The<br>Balloonatic<br>Asylum</blink></center>
+                        </h1>
+                    </td>
+                    <td>
+                        <% if(authorized){ %>
+                            <a href="logout" class="logoutbutton">Logout</a>
+                        <% }else{ %>
+                            <a href="login" class="lbutton">Login</a>
+                            <a href="register" class="rbutton">Register</a>
+                        <% } %>
+                    </td>
+                    <td>
+                        <div class="navbar">
+                            <h1>
+                                <a href="/balloon-category?category=birthday_bouquets">Products</a>
+                                <a href="about">About</a>
+                                <a href="contact">Contact Us</a>
+                            </h1>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div class="navtwo">                            
+                            <div class="grid-item"><a href="/balloon-category?category=birthday_bouquets">Birthday Bouquets</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=ballony_occasions">Balloony Occasions</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=build_a_ballon_bouquet">Build a Balloon Bouquet</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=decorating_with_ballons">Decorating with Balloons</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=ballon_in_bulk">Balloons in Bulk</a></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+                <h1 style="color: darkblue;"><center><%= data.products[0].category%></center></h1>                
+                <% for(var i=0; i < data.products.length ; i++) { %>                  
+                <div id="product-div">
+                    <div class="card">
+                        <a href="/"><img src="<%= data.products[i].imageURL %>" style="width: 100%;" height="300px"></a>
+                        <h1 id="popular1" onclick="popular1()"><%= data.products[i].productName %></h1>
+                        <p class="price">$<%= data.products[i].unitPrice %></p>
+                        <p><%= data.products[i].discription %></p>
+                        <a href="/"><p><button>Add to Cart</button></p></a>
+                    </div>
+                </div>
+                <% } %>
+            </div>  
+        </div>
+        <br><br><br><br>
+        <div class="footer">
+            <p>Copyright 1999-2021 by Smit Kakadiya. All Rights Reserved.</p>
+        </div>
+        <script src="public/js/main.js"></script>
+    </body>
+</html>

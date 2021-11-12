@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Balloonatic Asylum Login Form</title>
+        <link rel="stylesheet" href="public/css/style.css">
+    </head>
+        <div id="content">
+            <table>
+                <tr>
+                    <td>
+                        <a href="/"><img src="public/images/logo.jpg" class="logo2"/></a>
+                    </td>
+                    <td>
+                        <h1><center><blink>The<br>Balloonatic<br>Asylum</blink></center>
+                        </h1>
+                    </td>
+                    <td>
+                        <% if(authorized){ %>
+                            <a href="logout" class="logoutbutton">Logout</a>
+                        <% }else{ %>
+                            <a href="login" class="lbutton">Login</a>
+                            <a href="register" class="rbutton">Register</a>
+                        <% } %>
+                    </td>
+                    <td>
+                        <div class="navbar">
+                            <h1>
+                                <a href="/balloon-category?category=birthday_bouquets">Products</a>
+                                <a href="about">About</a>
+                                <a href="contact">Contact Us</a>
+                            </h1>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div class="navtwo">                            
+                            <div class="grid-item"><a href="/balloon-category?category=birthday_bouquets">Birthday Bouquets</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=ballony_occasions">Balloony Occasions</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=build_a_ballon_bouquet">Build a Balloon Bouquet</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=decorating_with_ballons">Decorating with Balloons</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=ballon_in_bulk">Balloons in Bulk</a></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <h2 class="register-form"><center>Balloonatic Asylum Login Form</center></h2>
+            <form method="POST" action="/login">
+            <div class="container">
+                <% if(error.length){ %>
+                    <div class="isa_error" role="alert">
+                        <ul class="mb-0">
+                            <% for(var i=0; i < error.length ; i++) { %>
+                                <li>
+                                    <%= error[i].message%>
+                                </li>
+                            <% } %>
+                        </ul>
+                    </div>
+                <% } %>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="text" id="email" name="email" placeholder="it should contain @,.">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="col-90">
+                        <input type="password" id="password2" name="password2">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <input type="submit" value="Login" class="login-button">
+                    <input type="Reset" value="Reset" class="reset-button">
+                </div>  
+            </div>  
+            </form>
+            <br><br><br><br>
+        </div>
+        <br><br><br>
+        <div class="footer">
+            <p>Copyright 1999-2021 by Smit Kakadiya. All Rights Reserved.</p>
+        </div>
+        <script src="public/js/main.js"></script>
+    </body>
+</html>

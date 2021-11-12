@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>
+            About US
+        </title>
+        <link rel="stylesheet" href="public/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            <table>
+                <tr>
+                    <td>
+                        <a href="/"><img src="public/images/logo.jpg" class="logo1"/></a>
+                    </td>
+                    <td>
+                        <h1><center><blink>The<br>Balloonatic<br>Asylum</blink></center>
+                        </h1>
+                    </td>
+                    <td>
+                        <% if(authorized){ %>
+                            <a href="logout" class="logoutbutton">Logout</a>
+                        <% }else{ %>
+                            <a href="login" class="lbutton">Login</a>
+                            <a href="register" class="rbutton">Register</a>
+                        <% } %>
+                    </td>
+                    <td>
+                        <div class="navbar">
+                            <h1>
+                                <a href="/balloon-category?category=birthday_bouquets">Products</a>
+                                <a href="about">About</a>
+                                <a href="contact">Contact Us</a>
+                            </h1>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <div class="navtwo">                            
+                            <div class="grid-item"><a href="/balloon-category?category=birthday_bouquets">Birthday Bouquets</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=ballony_occasions">Balloony Occasions</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=build_a_ballon_bouquet">Build a Balloon Bouquet</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=decorating_with_ballons">Decorating with Balloons</a></div>
+                            <div class="grid-item"><a href="/balloon-category?category=ballon_in_bulk">Balloons in Bulk</a></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <h1 style="color: darkblue;"><center><u>About Us</u></center></h1>
+            <img src="public/images/Krista.jpg" alt="Krista" class="about">
+            <center><button id = "krista" onClick= "krista1()"><h1>Krista H. Elium</h1></button></center>
+            <br><br><br><br><br>
+            <p class="intro">
+                The Balloonatic Asylum was formed in 2012 by Krista H. Elium.
+                The Balloonatic Asylum sells high quality latex and mylar balloons at affordable prices.
+                We make beautiful hand-crafted balloons for any occasion, recreating ideas at the customers request. All you need to do is send us a photo of what you want, and we'll bring it to life as a quality balloon adding that personal touch. We pride ourselves on listening to our customers.
+            </p>
+            <br><br>
+            <h1 style="color: darkgreen"><center><u>Our Vision</u></center></h1>
+            <p class="intro">
+                To empower our customers to achieve their goals, by providing reliable and quality results with great quality of baloons. We work together with our client to add value in whatever we do to contribute to the success of our client.
+                We exhibit a strong will to win in every challenging task and in every aspect of work we do.
+                We believe in the motto that <b>what we do & we do well</b>. We work to provide outstanding services to our customers with utmost importance given to quality.
+            </p>
+            <br><br>
+            <h1 style="color: darkgreen"><center><u>Our Mission</u></center></h1>
+            <p class="intro">
+                The company vision is to help various type of pople like entrepreneurs and creative thinkers to convert their innovative ideas into reality by using the power of emotional intelligence to our team development and business intelligence team.
+            </p>
+            <br><br><br><br>
+        </div>        
+        <div class="footer">
+            <p>Copyright 1999-2021 by Smit Kakadiya. All Rights Reserved.</p>
+        </div>
+        <script src="public/js/main.js"></script>
+    </body>
+</html>
