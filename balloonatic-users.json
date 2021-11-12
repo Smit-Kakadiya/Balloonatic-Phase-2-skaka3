@@ -1,0 +1,48 @@
+{
+    "users": [
+      {
+        "email": "smkakdiya201@gmail.com",
+        "password2": "Smit@1234",
+        "firstName": "Smit",
+        "lastName": "Kakadiya",
+        "address": "77 Forest Rd",
+        "city": "West Haven",
+        "state": "CT",
+        "postalCode": "06516",
+        "phone": "2015140009"
+      },
+      {
+        "email": "adit@gmail.com",
+        "password2": "Adit@1234",
+        "firstName": "Adit",
+        "lastName": "Patel",
+        "address": "25 Lee St",
+        "city": "Rutherford",
+        "state": "NJ",
+        "postalCode": "06607",
+        "phone": "2012123455"
+      },
+      {
+        "email": "vrunda@tcs.com",
+        "password2": "Vrunda@9990",
+        "firstName": "Vrunda",
+        "lastName": "Kakadiya",
+        "address": "15 Carneer Ave",
+        "city": "West Haven",
+        "state": "CT",
+        "postalCode": "06516",
+        "phone": "4732382328"
+      },
+      {
+        "email": "smit_kakadiya@gmail.com",
+        "password2": "Smit@1234",
+        "firstName": "Smit",
+        "lastName": "Kakadiya",
+        "address": "155 Bull Hill Rd",
+        "city": "Orange",
+        "state": "CT",
+        "postalCode": "",
+        "phone": ""
+      }
+    ]
+  }
