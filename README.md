@@ -14,6 +14,15 @@ $ npm install express
 ```bash
 $ node server.js
 ```
+If you get `Error: Cannot find module cookie-parser` then you also need to install cookie-parser module as I used this module to store user login/ logout data.
+## Step 4: Install Cookie Parser
+```bash
+$ npm install cookie-parser
+```
+## Step 5: Again run main coltroller (server.js)
+```bash
+$ node server.js
+```
 
 ## Author
 - [Smit Kakadiya] (https://smit-kakadiya.github.io)
